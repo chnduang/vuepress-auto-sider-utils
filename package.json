@@ -1,6 +1,6 @@
 {
   "name": "vuepress-auto-sider-utils",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.3",
   "description": "vuepress生成sider方法",
   "main": "index.js",
   "repository": "git@github.com:ZQD1224/vuepress-auto-sider-utils.git",
