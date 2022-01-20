@@ -1,0 +1,30 @@
+{
+  "name": "vuepress-auto-sider-utils",
+  "version": "0.0.1-beta.1",
+  "description": "vuepress生成sider方法",
+  "main": "index.js",
+  "repository": "git@github.com:ZQD1224/vuepress-auto-sider-utils.git",
+  "author": "zhouqd <zhouqd1997@163.com>",
+  "keywords": [
+    "vuepress-sider",
+    "sider-utils"
+  ],
+  "browser": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "copy": "cp package.json README.md dist",
+    "build": "rollup -c && npm run copy",
+    "prepublish": "npm run build",
+    "publish": "node ./script/pub.js"
+  },
+  "devDependencies": {
+    "commander": "^8.3.0",
+    "rollup": "^2.64.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "shelljs": "^0.8.5",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4"
+  }
+}
