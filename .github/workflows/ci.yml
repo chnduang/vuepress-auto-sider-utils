@@ -5,9 +5,7 @@ name: vuepress-auto-sider-ci
 
 on:
   push:
-    branches: [npm]
-  # pull_request:
-  #   branches: [ master ]
+    branches: [ci]
 
 jobs:
   build:
@@ -36,7 +34,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-    steps:
       - name: 正在发布至npm
         env: # 设置环境变量
           NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # toKen私密变量
