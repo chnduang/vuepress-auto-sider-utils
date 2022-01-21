@@ -13,8 +13,8 @@
   "license": "MIT",
   "scripts": {
     "copy": "node ./script/copy.js",
-    "build": "rollup -c && npm run copy",
-    "prepub": "npm run build",
+    "build": "yarn && rollup -c",
+    "prepub": "npm run build && npm run copy",
     "pub": "node ./script/pub.js"
   },
   "publishConfig": { "registry": "https://registry.npmjs.org/" },
