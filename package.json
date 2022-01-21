@@ -13,11 +13,10 @@
   "license": "MIT",
   "scripts": {
     "copy": "node ./script/copy.js",
-    "build": "npm cache verify && yarn && rollup -c",
+    "build": "npm cache verify && npm install && rollup -c",
     "prepub": "npm run build && npm run copy",
     "pub": "node ./script/pub.js"
   },
-  "publishConfig": { "registry": "https://registry.npmjs.org/" },
   "devDependencies": {
     "commander": "^8.3.0",
     "rollup": "^2.64.0",
