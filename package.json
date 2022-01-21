@@ -13,7 +13,7 @@
   "license": "MIT",
   "scripts": {
     "copy": "node ./script/copy.js",
-    "build": "yarn && rollup -c",
+    "build": "npm cache verify && yarn && rollup -c",
     "prepub": "npm run build && npm run copy",
     "pub": "node ./script/pub.js"
   },
