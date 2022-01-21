@@ -23,6 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org/
           cache: "npm"
+      - run: npm config set registry https://registry.npmjs.org/
       - run: npm ci
       - run: npm run pub
         env: # 设置环境变量
