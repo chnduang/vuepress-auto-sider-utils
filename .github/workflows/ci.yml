@@ -5,7 +5,7 @@ name: vuepress-auto-sider-ci
 
 on:
   push:
-    branches: [ci]
+    branches: [master]
 
 jobs:
   build:
