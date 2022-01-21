@@ -40,6 +40,7 @@ function publish() {
   //     targetFile
   //   ); // 修改版本号
   shelljs.cd("dist");
+  shelljs.exec("npm config set registry https://registry.npmjs.org/"); // 设置registry
   shelljs.exec("npm publish"); // 发布
 }
 
